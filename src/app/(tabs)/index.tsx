@@ -3,13 +3,14 @@ import Colors from '@/constants/Colors';
 import { Text, View } from '@/components/Themed';
 import Button from '@/components/Button';
 import { Image,  } from 'react-native';
-
+import NotificationLocal from '../../components/NotificationLocal';
 
 const product = products[1];
 export default function TabOneScreen() {
 
   return (
     <>
+    <NotificationLocal></NotificationLocal>
     <View className='items-center justify-center p-3 '>
       <Image source={{ uri: product.image }} className='w-full aspect-[1]' />
 
